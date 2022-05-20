@@ -1,0 +1,76 @@
+.logo1 {
+    position:relative;
+	top: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.logoxd {
+    margin-top: -10px;
+	width: 50px;
+	height: 50px;
+}
+
+/* Mapa y Contacto */
+
+.btn .fas, .btn .fab, .btn .far {
+    margin-left: 3px;
+  }
+
+  h6 {
+    line-height: 1.7;
+  }
+
+  footer.page-footer {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  body {
+    background-color: #eee;
+  }
+
+  .btn.peach-gradient {
+    color: #fff !important;
+  }
+
+  .map-container-section {
+    overflow:hidden;
+    /* padding-bottom:56.25%; */
+    position:relative;
+    height:0;
+  }
+.map-container-section iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+/* Fin Mapa y Contacto */
+
+/* Botones */
+
+.btn-hover-info {
+  color: #33B5E5 !important; }
+  .btn-hover-info:hover {
+    color: #fff !important;
+    background-color: #33B5E5 !important;
+    border-color: #33B5E5 !important; }
+
+.contactanos-form > button{
+  padding-left: 300px;
+}
+
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.a-polaroid {
+  margin-top: 25px; 
+  margin-bottom: 25px;
+}
+

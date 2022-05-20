@@ -1,0 +1,29 @@
+{% load static %}
+<header id="menu">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#menu"><img src="{% static 'images/Logo/05.png' %}" class="logo1"
+                            alt=""></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="scroll" href="{% url 'inicio' %}">Inicio</a></li>
+                        <li><a class="scroll" href="#about">Sobre Nosotros</a></li>
+                        <li><a class="scroll" href="#service">Servicios</a></li>
+                        <li><a class="scroll" href="{% url 'steel_framing' %}">Steel Framing</a></li>
+                        <li><a class="scroll" href="#portfolio">Obras</a></li>
+                        <li><a class="scroll" href="#portfolio">Diseños</a></li>
+                        <li><a class="scroll" href="#pricing">Precios M2</a></li>
+                        <li><a class="scroll" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+    </div>
+</header>

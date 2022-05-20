@@ -1,0 +1,33 @@
+{% load static %}
+
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
+        </div>
+    </div>
+    {% block body %}
+
+    {% endblock %}
+    <!--Jquery-->
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <!--Boostrap-Jquery-->
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    <!--Preetyphoto-Jquery-->
+    <script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+    <!--NiceScroll-Jquery-->
+    <script type="text/javascript" src="{% static 'js/jquery.nicescroll.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/waypoints.min.js' %}"></script>
+    <!--Isotopes-->
+    <script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+    <!--Wow-Jquery-->
+    <script type="text/javascript" src="{% static 'js/wow.js' %}"></script>
+    <!--Count-Jquey-->
+    <script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.inview.min.js' %}"></script>
+    <!--Owl-Crousels-Jqury-->
+    <script type="text/javascript" src="{% static 'js/owl.carousel.js' %}"></script>
+    <!--Main-Scripts-->
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>

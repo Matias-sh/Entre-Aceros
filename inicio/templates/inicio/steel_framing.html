@@ -1,0 +1,63 @@
+{% extends 'inicio/index.html' %}
+{% load static %}
+{% block body.super %}
+{% block menu_opciones %}
+<ul class="nav navbar-nav" style="left: 100%;">
+    <li><a class="scroll" href="{% url 'inicio' %}" style="color: #9ED982;">Inicio</a></li>
+</ul>
+{% endblock menu_opciones %}
+{% block slider %}
+{% endblock slider %}
+{% block about %}
+<div class="heading">
+    <div class="col-md-12"></div>
+    <h2>STEEL <span>FRAME</span></h2>
+    <p style="font-size: 16px;">
+        El Steel Framing es un sistema constructivo que reemplaza a la estructura de mampostería, hormigón, etc. por un
+        sistema liviano y, a la vez, muy resistente, de paneles formados con perfiles de acero galvanizado liviano.
+    </p>
+</div>
+
+<div class="row">
+    <div class="heading">
+        <h2>¿<span>P</span>or que utilizar <span>S</span>teel Frame?</h2>
+    </div>
+    <div class="col-md-12 ab-sec">
+        <div class="col-md-8">
+            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Flexibilidad Arquitectonica
+            </h3>
+            <p>
+            <h6>Se adapta a cualquier diseño arquitectonico y a cualquier tipo de acabado</h6>
+            </p>
+            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Construcción Sostenible</h3>
+            <p>
+            <h6>El acero es respetuoso con el medio ambiente, altamente resistente, puede reciclarse y reutilizarse
+                completamente. Las estructuras de acero no necesitan recubrimientos químicos agresivos y gracias al
+                sistema de fabricación y su precisión no requiere de procesos y no genera desperdicios.</h6>
+            </p>
+            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Facilidad de Montaje</h3>
+            <p>
+            <h6>Por ser un sistema muy liviano resulta facil de maniobra, lo que disminuye considerablemente el uso de
+                equipos de montaje.</h6>
+            </p>
+            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Costos Favorables</h3>
+            <p>
+            <h6>La reducción en tiempos de obra y la disminución de gastos operativos directos e indirectos impactan
+                favorablemente en el presupuesto</h6>
+            </p>
+            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Menor Tiempo de Construcción
+            </h3>
+            <p>
+            <h6>Construir con Steel Framing, permite incrementar la velocidad en tiempos de diseño, fabricación y
+                entrega. La presición de los componentes y la versatilidad de los perfiles facilita la instalación de la
+                estructura en el sitio.</h6>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+{% block galeria %}
+{% endblock galeria %}
+
+{% endblock about %}
+{% endblock body.super %}
