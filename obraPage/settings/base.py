@@ -23,11 +23,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-1)!9d%)8u=6^tgrlab*)&9r@&vi^i%7bh%ihaw(shtcts8!d%t'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['radiant-journey-43346.herokuapp.com', '*']
-
 
 # Application definition
 
@@ -72,16 +67,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'obraPage.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation

@@ -1,1 +1,1 @@
-web: gunicorn inicio:server
+web: gunicorn obraPage.wsgi --log-file -
