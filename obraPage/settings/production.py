@@ -3,7 +3,7 @@ from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['radiant-journey-43346.herokuapp.com', '*']
+ALLOWED_HOSTS = ['secret-forest-35723.herokuapp.com', '*']
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
