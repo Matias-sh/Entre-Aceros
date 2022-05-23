@@ -32,4 +32,6 @@ urlpatterns = [
     path('det_obras_nuniez/', views.det_obras_nuniez, name="det_obras_nuniez"),
     path('det_obras_rio_gallegos/', views.det_obras_rio_gallegos, name="det_obras_rio_gallegos"),
     path('det_obras_sanmar/', views.det_obras_sanmar, name="det_obras_sanmar"),
+    ## EMAIL
+    path('envio', views.contacto, name="contacto")
 ]

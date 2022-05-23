@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="icon" type="image/x-icon" href="{% static 'images/Logo/05.png' %}">
   <title>Entre Aceros</title>
   <!--Bootstrap-->
   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
@@ -60,7 +61,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-align: right;">
             {% block menu_opciones %}
             <ul class="nav navbar-nav" style="left: 60%;">
-              <li class="active"><a class="scroll" href="{% url 'inicio' %}">Inicio</a></li>
+              <li class="active"><a class="scroll" href="#menu">Inicio</a></li>
               <li><a class="scroll" href="#about">Sobre Nosotros</a></li>
               <li><a class="scroll" href="{% url 'servicios' %}">Servicios</a></li>
               <li><a class="scroll" href="{% url 'steel_framing' %}">Steel Frame</a></li>
@@ -73,6 +74,13 @@
         </div>
         <!-- /.container-fluid -->
       </div>
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-success" role="alert" id="alerta-email" style="margin-top: 30px;">
+            {{message}}
+          </div>
+        {% endfor %}
+      {% endif %}
     </div>
   </header>
   {% endblock menu %}
@@ -260,16 +268,16 @@
 
                   <!--Grid column-->
                   <div class="col-md-8 col-xl-9">
-                    <form>
-
+                    <form method="POST" action="{% url 'contacto' %}">
+                      {% csrf_token %}
                       <!--Grid row-->
                       <div class="row">
 
                         <!--Grid column-->
                         <div class="col-md-6">
                           <div class="md-form">
-                            <input type="text" id="contact-name" class="form-control">
-                            <label for="contact-name" class="">Tu nombre</label>
+                            <input type="text" id="contact-name" class="form-control" name="name" placeholder="Nombre" required>
+                            <label for="contact-name" class=""></label>
                           </div>
                         </div>
                         <!--Grid column-->
@@ -277,8 +285,8 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                           <div class="md-form">
-                            <input type="text" id="contact-email" class="form-control">
-                            <label for="contact-email" class="">Tu email</label>
+                            <input type="text" id="contact-email" class="form-control" name="email" placeholder="Email" required>
+                            <label for="contact-email" class=""></label>
                           </div>
                         </div>
                         <!--Grid column-->
@@ -290,8 +298,8 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="md-form">
-                            <input type="text" id="contact-Subject" class="form-control">
-                            <label for="contact-Subject" class="">Asunto</label>
+                            <input type="text" id="contact-Subject" class="form-control" name="subject" placeholder="Asunto">
+                            <label for="contact-Subject" class=""></label>
                           </div>
                         </div>
                       </div>
@@ -305,20 +313,21 @@
 
                           <div class="md-form">
                             <textarea type="text" id="contact-message" class="md-textarea form-control"
-                              rows="3"></textarea>
-                            <label for="contact-message">Su Mensaje</label>
+                              rows="3" name="message" placeholder="Su Mensaje" required></textarea>
+                            <label for="contact-message"></label>
                           </div>
 
                         </div>
                       </div>
                       <!--Grid row-->
 
+                      <div class="text-center text-md-left my-4">
+                        <button type="submit" class="btn btn-info" style="margin-left: 40%;">Enviar</button>
+                      </div>
+                    </div>
+
                     </form>
 
-                    <div class="text-center text-md-left my-4">
-                      <button type="button" class="btn btn-info" style="margin-left: 40%;">Enviar</button>
-                    </div>
-                  </div>
                   <!--Grid column-->
 
                   <!--Grid column-->
@@ -420,6 +429,15 @@
   <script type="text/javascript" src="{% static 'js/owl.carousel.js' %}"></script>
   <!--Main-Scripts-->
   <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+  <!-- Cerrar div de alerta de correo -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        setTimeout(function() {
+            $("#alerta-email").fadeOut(1500);
+        },3000);
+    });
+    </script>
 
 </body>
 
