@@ -6,13 +6,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Reveal Bootstrap Template</title>
+  <title>Entre Aceros</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'img/favicon.png' %}" rel="icon">
-  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="{% static 'images/favicon.png' %}" rel="icon">
+  <link href="{% static 'images/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -27,13 +27,6 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style-obras.css' %}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Reveal - v4.7.0
-  * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -99,114 +92,92 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Obras</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{% static 'img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'images/obras_imagenes/colocacion_extractores_eolicos/colocacion_extractores_eolicos_1.jpeg' %}" class="img-fluid" alt="" style="width: 380px; height: 267px;">
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="{% static 'img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Colocación de Estractores Eólicos</h4><br>
+              <a href="{% static 'images/obras_imagenes/colocacion_extractores_eolicos/colocacion_extractores_eolicos_1.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'det_obras_eolicos' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{% static 'img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'images/obras_imagenes/el_canton/el_canton_1.jpg' %}" class="img-fluid" alt="" style="width: 380px; height: 267px;">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="{% static 'img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>El Canton</h4>
+              <a href="{% static 'images/obras_imagenes/el_canton/el_canton_1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'det_obras_canton' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{% static 'img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'images/obras_imagenes/galpon_rio_gallegos/galpon_rio_gallegos_1.jpg' %}" class="img-fluid" alt="" style="width: 380px; height: 267px;">
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="{% static 'img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{% static 'img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="{% static 'img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{% static 'img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="{% static 'img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Obra Galpón Rio Gallegos</h4>
+              <a href="{% static 'images/obras_imagenes/galpon_rio_gallegos/galpon_rio_gallegos_1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'det_obras_rio_gallegos' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{% static 'img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'images/obras_imagenes/obra_ampliacion_hotel_el_chalten/obra_ampliacion_hotel_el_chalten_1.jpeg' %}" class="img-fluid" alt="" style="width: 380px; height: 267px;">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="{% static 'img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Obra Ampliación del Hotel el Chalten</h4>
+              <a href="{% static 'images/obras_imagenes/obra_ampliacion_hotel_el_chalten/obra_ampliacion_hotel_el_chalten_1.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'det_obras_chalten' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{% static 'img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'images/obras_imagenes/obra_general_rodriguez/obra_general_rodriguez_1.jpg' %}" class="img-fluid" alt="" style="width: 380px; height: 267px;">
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="{% static 'img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Obra General Rodriguez</h4>
+              <a href="{% static 'images/obras_imagenes/obra_general_rodriguez/obra_general_rodriguez_1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'det_obras_gral_rodriguez' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{% static 'img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'images/obras_imagenes/obra_nuniez/obra_nuniez_1.jpg' %}" class="img-fluid" alt="" style="width: 380px; height: 267px;">
             <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="{% static 'img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Obra Nuñez</h4>
+              <a href="{% static 'images/obras_imagenes/obra_nuniez/obra_nuniez_1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'det_obras_nuniez' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{% static 'img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'images/obras_imagenes/obra_san_martin/obra_san_martin_1.jpg' %}" class="img-fluid" alt="" style="width: 380px; height: 267px;">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="{% static 'img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Obra San Martin</h4>
+              <a href="{% static 'images/obras_imagenes/obra_san_martin/obra_san_martin_1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'det_obras_sanmar' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-        </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'images/obras_imagenes/oficina_fermar/oficina_fermar_1.jpg' %}" class="img-fluid" alt="" style="width: 380px; height: 267px;">
+            <div class="portfolio-info">
+              <h4>Obra Oficina Fermar</h4>
+              <a href="{% static 'images/obras_imagenes/oficina_fermar/oficina_fermar_1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'det_obras_fermar' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'images/obras_imagenes/sindicato_profesores_calafate/sindicato_profesores_calafate_1.jpg' %}" class="img-fluid" alt="" style="width: 380px; height: 267px;">
+            <div class="portfolio-info">
+              <h4>Sindicato Profesores Calafate</h4>
+              <a href="{% static 'images/obras_imagenes/sindicato_profesores_calafate/sindicato_profesores_calafate_1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% url 'det_obras_calafate' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          
       </div>
     </section>
     
@@ -215,20 +186,6 @@
     
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
-      -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

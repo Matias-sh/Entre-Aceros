@@ -61,3 +61,32 @@ def sist_electricos(request):
 
 def steel_framing(request):
     return render(request, 'inicio/servicios/steel_framing/servicio.html')
+
+## VISTAS DET_OBRAS
+
+def det_obras_calafate(request):
+    return render(request, 'inicio/obras_detalles/calafate/obras_detalles.html')
+
+def det_obras_canton(request):
+    return render(request, 'inicio/obras_detalles/canton/obras_detalles.html')
+
+def det_obras_chalten(request):
+    return render(request, 'inicio/obras_detalles/el_chalten/obras_detalles.html')
+
+def det_obras_eolicos(request):
+    return render(request, 'inicio/obras_detalles/eolicos/obras_detalles.html')
+
+def det_obras_fermar(request):
+    return render(request, 'inicio/obras_detalles/fermar/obras_detalles.html')
+
+def det_obras_gral_rodriguez(request):
+    return render(request, 'inicio/obras_detalles/gral_rodriguez/obras_detalles.html')
+
+def det_obras_nuniez(request):
+    return render(request, 'inicio/obras_detalles/nuniez/obras_detalles.html')
+
+def det_obras_rio_gallegos(request):
+    return render(request, 'inicio/obras_detalles/rio_gallegos/obras_detalles.html')
+
+def det_obras_sanmar(request):
+    return render(request, 'inicio/obras_detalles/sanmar/obras_detalles.html')
