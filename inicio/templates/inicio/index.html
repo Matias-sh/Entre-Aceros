@@ -180,7 +180,7 @@
               src="{% static 'images/Logo/entre_aceros.png' %}" alt=""> </div>
         </div>
       </div>
-      {% endblock about %}
+      
     </div>
   </section>
 
@@ -189,8 +189,9 @@
       <h2><br></h2>
     </div>
   </div>
-
+  {% endblock about %}
   <!-- Galeria -->
+  {% block galeria %}
   <section>
     <div class="container">
       <div class="col-md-12">
@@ -237,6 +238,7 @@
       </div>
     </div>
   </section>
+  
   <!-- Fin Galeria -->
 
   <div class="bg-sec">
@@ -244,8 +246,9 @@
       <h2><br></h2>
     </div>
   </div>
-
+  {% endblock galeria %}
   <!--Contacto-->
+  {% block contacto %}
   <div class="container-fluid mb-5">
     <!--Grid row-->
     <div class="row">
@@ -365,13 +368,13 @@
     </div>
 
   </div>
-
+  {% endblock contacto %}
   <!-- Fin Contacto -->
 
   <br><br><br>
 
   <!-- Mapa -->
-
+  {% block mapa %}
   <section>
     <div id="map-container-demo-section" class="z-depth-1-half map-container-section mb-4" style="height: 500px">
       <iframe
@@ -379,6 +382,7 @@
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
+  {% endblock mapa %}
   <!-- Fin Mapa -->
 
 
