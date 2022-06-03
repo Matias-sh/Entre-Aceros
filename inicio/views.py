@@ -11,7 +11,7 @@ def inicio(request):
     return render(request, 'inicio/index.html')
 
 
-def steel_framing(request):
+def steel_framing2(request):
     return render(request, 'inicio/steel_framing.html')
 
 def obras(request):
