@@ -301,11 +301,12 @@
                         <input type="submit" class="btn btn-info" style="margin-left: 40%;" id="button" value="Enviar Correo">
                       </div>
                     </form>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-                    <script type="text/javascript">
-                      emailjs.init('yuMM30Q_wgQ2ZP5jd')
-                    </script>
+<script type="text/javascript">
+  emailjs.init('yuMM30Q_wgQ2ZP5jd')
+</script>
 
                     
                   </div>
@@ -326,7 +327,7 @@
 
                       <li>
                         <i class="fas fa-envelope fa-2x orange-text"></i>
-                        <p>entreaceros@gmail.com</p>
+                        <p>entreaceros22@gmail.com</p>
                       </li>
                     </ul>
                   </div>
@@ -418,13 +419,13 @@ document.getElementById('form')
 
    btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
+   const serviceID = 'service_q9nlcqj';
    const templateID = 'template_1nffv2e';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Enviar Correo';
-      alert('Enviado!');
+      alert('¡El correo se envio correctamente!');
     }, (err) => {
       btn.value = 'Enviar Correo';
       alert(JSON.stringify(err));
