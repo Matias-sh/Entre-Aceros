@@ -1,63 +1,172 @@
-{% extends 'inicio/index.html' %}
-{% load static %}
-{% block body.super %}
-{% block menu_opciones %}
-<ul class="nav navbar-nav" style="left: 100%;">
-    <li><a class="scroll" href="{% url 'inicio' %}" style="color: #9ED982;">Inicio</a></li>
-</ul>
-{% endblock menu_opciones %}
-{% block slider %}
-{% endblock slider %}
-{% block about %}
-<div class="heading">
-    <div class="col-md-12"></div>
-    <h2>STEEL <span>FRAME</span></h2>
-    <p style="font-size: 16px;">
-        El Steel Framing es un sistema constructivo que reemplaza a la estructura de mampostería, hormigón, etc. por un
-        sistema liviano y, a la vez, muy resistente, de paneles formados con perfiles de acero galvanizado liviano.
-    </p>
-</div>
+<!DOCTYPE html>
+<html>
 
-<div class="row">
-    <div class="heading">
-        <h2>¿<span>P</span>or que utilizar <span>S</span>teel Frame?</h2>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Entre Aceros</title>
+  <!--Bootstrap-->
+  
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+  <!--Stylesheets-->
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  <!--Mis propios estilos-->
+  <link rel="stylesheet" type="text/css" href="/static/css/estilos.css">
+  <!--Responsive-->
+  <link rel="stylesheet" type="text/css" href="/static/css/responsive.css">
+  <!--Animation-->
+  <link rel="stylesheet" type="text/css" href="/static/css/animate.css">
+  <!--Prettyphoto-->
+  <link rel="stylesheet" type="text/css" href="/static/css/prettyPhoto.css">
+  <!--Font-Awesome-->
+  <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.css">
+  <!--Owl-Slider-->
+  <link rel="stylesheet" type="text/css" href="/static/css/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/owl.theme.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/owl.transitions.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        [endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+
+  <!--Preloader-->
+  <div id="preloader">
+    <div id="pre-status">
+      <div class="preload-placeholder"></div>
     </div>
-    <div class="col-md-12 ab-sec">
-        <div class="col-md-8">
-            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Flexibilidad Arquitectonica
-            </h3>
-            <p>
-            <h6>Se adapta a cualquier diseño arquitectonico y a cualquier tipo de acabado</h6>
-            </p>
-            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Construcción Sostenible</h3>
-            <p>
-            <h6>El acero es respetuoso con el medio ambiente, altamente resistente, puede reciclarse y reutilizarse
-                completamente. Las estructuras de acero no necesitan recubrimientos químicos agresivos y gracias al
-                sistema de fabricación y su precisión no requiere de procesos y no genera desperdicios.</h6>
-            </p>
-            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Facilidad de Montaje</h3>
-            <p>
-            <h6>Por ser un sistema muy liviano resulta facil de maniobra, lo que disminuye considerablemente el uso de
-                equipos de montaje.</h6>
-            </p>
-            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Costos Favorables</h3>
-            <p>
-            <h6>La reducción en tiempos de obra y la disminución de gastos operativos directos e indirectos impactan
-                favorablemente en el presupuesto</h6>
-            </p>
-            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Menor Tiempo de Construcción
-            </h3>
-            <p>
-            <h6>Construir con Steel Framing, permite incrementar la velocidad en tiempos de diseño, fabricación y
-                entrega. La presición de los componentes y la versatilidad de los perfiles facilita la instalación de la
-                estructura en el sitio.</h6>
+  </div>
+
+  <!-- SECCION NAVIGATION -->
+  <header id="menu">
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="/static/images/Logo/05.png" class="logo1"
+                alt="" style="margin-left: -100px;"></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-align: right;">
+            <ul class="nav navbar-nav" style="left: 100%;">
+                <li><a class="scroll" href="index.html" style="color: #000000;">Inicio</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCION ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="heading">
+            <div class="col-md-12"></div>
+            <h2>STEEL <span>FRAME</span></h2>
+            <p style="font-size: 16px;">
+                El Steel Framing es un sistema constructivo que reemplaza a la estructura de mampostería, hormigón, etc. por un
+                sistema liviano y, a la vez, muy resistente, de paneles formados con perfiles de acero galvanizado liviano.
             </p>
         </div>
+        
+        <div class="row">
+            <div class="heading">
+                <h2>¿<span>P</span>or que utilizar <span>S</span>teel Frame?</h2>
+            </div>
+            <div class="col-md-12 ab-sec">
+                <div class="col-md-8">
+                    <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Flexibilidad Arquitectonica
+                    </h3>
+                    <p>
+                    <h6>Se adapta a cualquier diseño arquitectonico y a cualquier tipo de acabado</h6>
+                    </p>
+                    <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Construcción Sostenible</h3>
+                    <p>
+                    <h6>El acero es respetuoso con el medio ambiente, altamente resistente, puede reciclarse y reutilizarse
+                        completamente. Las estructuras de acero no necesitan recubrimientos químicos agresivos y gracias al
+                        sistema de fabricación y su precisión no requiere de procesos y no genera desperdicios.</h6>
+                    </p>
+                    <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Facilidad de Montaje</h3>
+                    <p>
+                    <h6>Por ser un sistema muy liviano resulta facil de maniobra, lo que disminuye considerablemente el uso de
+                        equipos de montaje.</h6>
+                    </p>
+                    <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Costos Favorables</h3>
+                    <p>
+                    <h6>La reducción en tiempos de obra y la disminución de gastos operativos directos e indirectos impactan
+                        favorablemente en el presupuesto</h6>
+                    </p>
+                    <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Menor Tiempo de Construcción
+                    </h3>
+                    <p>
+                    <h6>Construir con Steel Framing, permite incrementar la velocidad en tiempos de diseño, fabricación y
+                        entrega. La presición de los componentes y la versatilidad de los perfiles facilita la instalación de la
+                        estructura en el sitio.</h6>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-{% block galeria %}
-{% endblock galeria %}
+  </section>
 
-{% endblock about %}
-{% endblock body.super %}
+  <!-- FOOTER -->
+  <!--
+  <footer id="footer">
+    <div class="bg-sec">
+      <div class="container">
+        <h2>¡A LA ESPERA DE QUE NOS CONTACTES!</h2>
+      </div>
+    </div>
+  </footer>
+  -->
+  <!-- FOOTER DOWN -->
+  <!--
+  <footer id="footer-down">
+    <h2>¡Siguenos en Nuestras Redes!</h2>
+    <ul class="social-icon">
+      <li class="facebook hvr-pulse"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+      <li class="twitter hvr-pulse"><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li class="linkedin hvr-pulse"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li class="google-plus hvr-pulse"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li class="youtube hvr-pulse"><a href="#"><i class="fa fa-youtube"></i></a></li>
+      <li class="instagram hvr-pulse"><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li class="behance hvr-pulse"><a href="#"><i class="fa fa-behance"></i></a></li>
+    </ul>
+  </footer>
+  <br><br>
+  -->
+  <!--Jquery-->
+  <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+  <!--Boostrap-Jquery-->
+  <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+  <!--Preetyphoto-Jquery-->
+  <script type="text/javascript" src="/static/js/jquery.prettyPhoto.js"></script>
+  <!--NiceScroll-Jquery-->
+  <script type="text/javascript" src="/static/js/jquery.nicescroll.js"></script>
+  <script type="text/javascript" src="/static/js/waypoints.min.js"></script>
+  <!--Isotopes-->
+  <script type="text/javascript" src="/static/js/jquery.isotope.js"></script>
+  <!--Wow-Jquery-->
+  <script type="text/javascript" src="/static/js/wow.js"></script>
+  <!--Count-Jquey-->
+  <script type="text/javascript" src="/static/js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.inview.min.js"></script>
+  <!--Owl-Crousels-Jqury-->
+  <script type="text/javascript" src="/static/js/owl.carousel.js"></script>
+  <!--Main-Scripts-->
+  <script type="text/javascript" src="/static/js/script.js"></script>
+
+</body>
+
+</html>
